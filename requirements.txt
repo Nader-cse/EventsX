@@ -1,0 +1,80 @@
+JavaScript Functional Requirements
+
+This JavaScript file implements the main interactive functionality of the EventsX web application using ES6 object-oriented programming.
+The code is written in strict mode and does not rely on any external libraries or frameworks.
+
+1. EventManager Class
+
+Manages a predefined list of upcoming events.
+
+Dynamically renders event cards inside a specified container using DOM manipulation.
+
+Displays event details including name, date, location, and price.
+
+Provides client-side event filtering functionality based on user input (search keyword).
+
+2. BudgetCalculator Class
+
+Handles the event budget calculation form.
+
+Calculates the total cost based on:
+
+Ticket price
+
+Quantity
+
+Travel cost
+
+Accommodation cost
+
+Prevents default form submission behavior.
+
+Displays the calculated total dynamically on the page.
+
+Dispatches a custom JavaScript event (budgetCalculated) after calculation.
+
+3. RegistrationForm Class
+
+Handles client-side validation for the event registration form.
+
+Validates required fields (name, email, phone number, selected event).
+
+Validates email format using regular expressions.
+
+Validates phone number to ensure it contains exactly 10 digits.
+
+Prevents form submission if validation fails.
+
+Redirects the user to the thank-you page only after successful validation.
+
+Dispatches a custom event (userRegistered) after successful registration.
+
+4. ParallaxController Class
+
+Implements a parallax scrolling effect.
+
+Updates background position dynamically based on window scroll offset.
+
+Enhances visual interactivity and user experience.
+
+5. SlidingForm Class
+
+Controls the visibility of a sliding form using a toggle mechanism.
+
+Adds or removes an active CSS class when a button is clicked.
+
+6. Application Initialization
+
+All components are initialized after the DOMContentLoaded event.
+
+Ensures safe DOM access and proper loading order.
+
+Listens for custom events to enable modular and event-driven behavior.
+
+Dependencies
+
+No external libraries or frameworks required.
+
+Uses vanilla JavaScript (ES6) only.
+
+Compatible with modern web browsers.

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Event Budget Calculator - EventsX">
+  <meta name="keywords" content="EventsX, Budget Calculator, Event Costs, Tickets, Travel, Accommodation">
+  <meta name="author" content="Your Full Name">
+  <title>Budget Calculator - EventsX</title>
+<link rel="stylesheet" href="CSS/styling.css">
+</head>
+<body>
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="logo"><h1>EventsX</h1></div>
+    <nav id="main-navigation">
+      <ul>
+       <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/about.html">About Us</a></li>
+        <li><a href="../pages/events.html">Events</a></li>
+        <li><a href="../pages/registration.html">Registration</a></li>
+        <li><a href="../pages/budget-calculator.html">Budget Calculator</a></li>
+        <li><a href="../pages/contact.html">Contact Me</a></li>
+       <li><a href="https://www.gu.edu.eg/" target="_blank" rel="noopener noreferrer">Galala University</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ========== END HEADER ========== -->
+
+  <main>
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <a href="../index.html">Home</a> &gt; <span>Budget Calculator</span>
+    </nav>
+
+    <section class="budget-calculator-section">
+      <h2>Event Budget Calculator</h2>
+      <p>Calculate your total event costs including tickets, travel, and accommodation.</p>
+
+      <form id="budget-form">
+        <div class="form-group">
+          <label for="tickets">Ticket Price ($):</label>
+          <input type="number" id="tickets" name="tickets" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Number of Tickets:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="travel">Travel Cost ($):</label>
+          <input type="number" id="travel" name="travel" min="0" required>
+        </div>
+
+        <div class="form-group">
+          <label for="accommodation">Accommodation Cost ($):</label>
+          <input type="number" id="accommodation" name="accommodation" min="0" required>
+        </div>
+
+        <button type="submit">Calculate Total</button>
+      </form>
+
+      <div id="budget-result">
+        <h3>Total Cost: $<span id="total-cost">0</span></h3>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="about.html">About Us</a> |
+        <a href="contact.html">Contact</a> |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </div>
+      <div class="footer-contact">
+          <a href="mailto:muhamednader57@outlook.com">Group13@email.com</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+      <div class="footer-copyright">
+        <p>©️ 2025 EduConnect. All rights reserved. Last Updated: <time datetime="2026-01-01">January 1, 2026</time></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/javascript.js"></script>
+</body>
+</html>

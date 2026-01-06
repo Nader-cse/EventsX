@@ -1,0 +1,441 @@
+/*
+
+ID & Name : Muhamed Nader Elbokl - 223103995
+            Mina adly - 223107085
+            Ahmed Walid Khalil - 223101993
+            Youssef Abdo - 223103077
+
+Course:     CSE211 Web programming             
+Assignment: Course Project 
+Date :      6/1/2026
+Description: The purpose of this .css is to style the page(s) in the course project
+
+
+
+
+*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+================================ */
+html, body {
+  min-height: 100vh;       
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6f0ff;
+  color: #0a1f44;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ===============================
+   MAIN
+================================ */
+main {
+  padding: 30px;
+  flex: 1;                 
+}
+
+/* ===============================
+   LINKS
+================================ */
+a {
+  text-decoration: none;
+  color: #0a3d91;
+}
+
+a:hover {
+  color: #1e60d7;
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.logo h1 {
+  font-size: 32px;
+}
+
+/* ===============================
+   NAVIGATION
+================================ */
+#main-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#main-navigation ul li a {  
+  color: white;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+#main-navigation ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===============================
+   BREADCRUMB
+================================ */
+.breadcrumb {
+  background-color: #cce0ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   EVENT CARDS
+================================ */
+.upcoming-events,
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.event-card {
+  background: linear-gradient(135deg, #ffffff, #cce0ff);
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  border-top: 5px solid #0a3d91;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+.event-card h3 {
+  color: #0a3d91;
+  margin-bottom: 10px;
+}
+
+/* ===============================
+   TABLE
+================================ */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #cce0ff;
+}
+
+th {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: white;
+}
+
+/* ===============================
+   FORMS
+================================ */
+form {
+  max-width: 600px;
+  background: linear-gradient(135deg, #ffffff, #e6f0ff);
+  padding: 30px;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #4f7be1;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #0a3d91;
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+button {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e60d7, #0a3d91);
+}
+
+/* ===============================
+   BUDGET RESULT
+================================ */
+#budget-result {
+  margin-top: 20px;
+  background: #cce0ff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: white;
+  padding: 15px 20px; /* صغرنا padding */
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  font-size: 14px; /* صغرنا الخط */
+  line-height: 20px;
+}
+
+footer a {
+  color: white;
+  margin: 0 5px; /* قللنا المسافة بين الروابط */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #main-navigation ul {
+    flex-direction: column;
+  }
+
+  .event-card {
+    width: 100%;
+  }
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #0a1f44;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0a3d91;
+}
+
+.about-section h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #1e60d7;
+}
+
+.about-section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about-section ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.about-section li {
+  margin-bottom: 10px;
+}
+
+.about-section figure {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-section figure img {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,61,145,0.15);
+}
+
+.about-section figure figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #0a3d91;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.8;
+  color: #0a1f44;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #0a3d91;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #1e60d7;
+}
+
+.upcoming-events {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.upcoming-events h2 {
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #0a3d91;
+}
+
+.event-card {
+  background: linear-gradient(135deg, #ffffff, #cce0ff);
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  border-top: 5px solid #0a3d91;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.event-card h3 {
+  color: #0a3d91;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #1e60d7;
+}
+
+.event-video {
+  margin-top: 2rem;
+}
+
+.event-video h3 {
+  margin-bottom: 1rem;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 7%; /* 16:9 ratio */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.video-copyright {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
+
+.photo-gallery {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.photo-gallery h3 {
+  color: #0a3d91;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 200px; /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover; /* Keeps aspect ratio without stretching */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 45%; /* Shows 2 photos per row on smaller screens */
+  }
+}
